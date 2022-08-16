@@ -2,7 +2,11 @@ import {apple,bill,google} from "../assets"
 import styles,{layout} from '../style'
 import {motion} from "framer-motion"
 const Billing = () => (
-    <section id="product"
+    <motion.section 
+      initial={{scale:0.7,opacity:0.5}}
+      whileInView={{scale:1,opacity:1}}
+      transition={{duration:0.1,delay:0}}
+    id="product"
              className={layout.sectionImgReverse}
     >
       <div className={layout.sectionImg}>
@@ -25,7 +29,7 @@ const Billing = () => (
       </div>
 
       
-    </section>
+    </motion.section>
   )
 
 
