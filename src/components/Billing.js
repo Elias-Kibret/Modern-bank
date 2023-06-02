@@ -6,11 +6,12 @@ const Billing = () => (
 		initial={{ scale: 0.7, opacity: 0.5 }}
 		whileInView={{ scale: 1, opacity: 1 }}
 		transition={{ duration: 0.1, delay: 0 }}
-		id="product"
-		className={layout.sectionImgReverse}
+		id="aboutus"
+		className={layout.sectionImgReverse + `mt-11`}
 	>
-		<div className={layout.sectionImg}>
+		<div className={layout.sectionImg + `mt-10`}>
 			<div>
+				1
 				<img
 					src={bill}
 					alt="billing"

@@ -7,9 +7,8 @@ import {
 	Stats,
 	CardDeal,
 	Testimonials,
-	Clients,
-	CTA,
 	Footer,
+	Contact,
 } from "./components/index";
 
 const App = () => (
@@ -33,8 +32,7 @@ const App = () => (
 				<Billing />
 				<Testimonials />
 				<CardDeal />
-				<Clients />
-				<CTA />
+				<Contact />
 				<Footer />
 			</div>
 		</div>

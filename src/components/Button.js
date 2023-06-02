@@ -7,7 +7,7 @@ const Button = ({ styles }) => {
 			className={`py-4 px-6
      bg-blue-gradient font font-medium text-[18px] rounded-[10px] text-primary outline-none  ${styles}`}
 		>
-			Contact Us
+			<a href="#contact"> Contact Us</a>
 		</button>
 	);
 };
