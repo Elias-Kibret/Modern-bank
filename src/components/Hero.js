@@ -54,12 +54,11 @@ const Hero = () => (
 			>
 				is here.
 			</motion.h1>
-			<p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-				We are a team of passionate and talented engineers who are committed to
-				using our skills and knowledge to build innovative products that make a
-				difference in the world. We believe that technology has the power to
-				solve some of the world's biggest problems, and we are dedicated to
-				using our skills to make that happen.
+			<p className={`${styles.paragraph} max-w-[470px] mt-2`}>
+				We are a trusted and legally registered LLC tech company located in
+				Jacksonville, Florida, USA. We offer a wide range of services to
+				businesses of all sizes, and we are committed to providing our clients
+				with the highest quality of service and the most innovative solutions
 			</p>
 		</motion.div>
 		<motion.div

@@ -23,31 +23,42 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-
+import habesha from "./habesha.jpg";
+import qds from "./Qds.png";
+import fana from "./fana.jpg";
+import ahadu from "./ahadu.png";
+import sisay from "./sisay areaya.jpg";
+import tsion from "./tsion gebremehedn.jpg";
 export {
-  airbnb,
-  bill,
-  binance,
-  card,
-  coinbase,
-  dropbox,
-  logo,
-  quotes,
-  robot,
-  send,
-  shield,
-  star,
-  menu,
-  close,
-  google,
-  apple,
-  arrowUp,
-  discount,
-  facebook,
-  instagram,
-  linkedin,
-  twitter,
-  people01,
-  people02,
-  people03,
+	tsion,
+	sisay,
+	habesha,
+	qds,
+	fana,
+	ahadu,
+	airbnb,
+	bill,
+	binance,
+	card,
+	coinbase,
+	dropbox,
+	logo,
+	quotes,
+	robot,
+	send,
+	shield,
+	star,
+	menu,
+	close,
+	google,
+	apple,
+	arrowUp,
+	discount,
+	facebook,
+	instagram,
+	linkedin,
+	twitter,
+	people01,
+	people02,
+	people03,
 };

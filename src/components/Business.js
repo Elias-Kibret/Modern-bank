@@ -1,46 +1,65 @@
-import React from 'react'
-import { features } from '../constants'
-import styles ,{layout} from '../style'
-import Button from './Button'
-import { motion } from 'framer-motion'
-const Featured=({icon,title,content,index})=>(
-<div className={`flex flex-row p-6 rounded-[20px] ${index !==features.length-1?"mb:6":"mb-0"} feature-card`}>
-<div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
-  <img src={icon} alt="icon" className='w-[50%] h-[50%] object-contain'/>
-</div>
-<div className='flex-1 flex flex-col ml-3'>
-  <h4 className='font-poppins font-semibold text-white text-[18px] leading-[23px] mb-1'>{title}</h4>
-  <p className='font-poppins font-normal text-dimWhite text-[16px] leading-[24px] mb-1'>{content}</p>
-</div>
-</div>)
+import React from "react";
+import { features } from "../constants";
+import styles, { layout } from "../style";
+import Button from "./Button";
+import { motion } from "framer-motion";
+const Featured = ({ icon, title, content, index }) => (
+	<div
+		className={`flex flex-row p-6 rounded-[20px] ${
+			index !== features.length - 1 ? "mb:6" : "mb-0"
+		} feature-card`}
+	>
+		<div
+			className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+		>
+			<img src={icon} alt="icon" className="w-[50%] h-[50%] object-contain" />
+		</div>
+		<div className="flex-1 flex flex-col ml-3">
+			<h4 className="font-poppins font-semibold text-white text-[18px] leading-[23px] mb-1">
+				{title}
+			</h4>
+			<p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px] mb-1">
+				{content}
+			</p>
+		</div>
+	</div>
+);
 const Business = () => {
-  return (
-    <section id="features" className={layout.section}>
-      <motion.div 
-      initial={{x:-600,opacity:.5}}
-      whileInView={{x:0,opacity:1}}
-      transition={{duration:0.5, delay:0,stiffness:120}}
-      className={layout.sectionInfo}>
-        <div>
+	return (
+		<section id="features" className={layout.section}>
+			<motion.div
+				initial={{ x: -600, opacity: 0.5 }}
+				whileInView={{ x: 0, opacity: 1 }}
+				transition={{ duration: 0.5, delay: 0, stiffness: 120 }}
+				className={layout.sectionInfo}
+			>
+				<div>
+					<h2 className={styles.heading2}>
+						Let us handle the tech <br className="sm:block hidden" />
+						so you can focus on growing your business
+					</h2>
+					<p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+						Contact us today to learn more about how we can help you take your
+						business to the next level. We have a team of experienced
+						professionals who can help you with everything from website design
+						and development to marketing and sales. We're here to help you
+						achieve your business goals, so don't hesitate to contact us today.
+					</p>
+					<Button styles="mt-10" />
+				</div>
+			</motion.div>
+			<motion.div
+				initial={{ x: 400, opacity: 0.5 }}
+				whileInView={{ x: 0, opacity: 1 }}
+				transition={{ duration: 0.5, delay: 0.3, stiffness: 120 }}
+				className={`${layout.sectionImg} flex-col`}
+			>
+				{features.map((feature, index) => (
+					<Featured key={feature.id} {...feature} index={index} />
+				))}
+			</motion.div>
+		</section>
+	);
+};
 
-         <h2 className={styles.heading2}>You do the Business <br className='sm:block hidden'/>we'll handle the money</h2>
-         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>With the right credit card,you can impove your financial life by building credit,earing
-          rewards and saving moneybut with hundreds of credit cards on the market
-         </p>
-         <Button styles="mt-10"/>
-        </div>
-      </motion.div>
-      <motion.div
-      initial={{x:400,opacity:.5}}
-      whileInView={{x:0,opacity:1}}
-      transition={{duration:0.5, delay:0.3,stiffness:120}}
-      className={`${layout.sectionImg} flex-col`}>
-       {features.map((feature,index)=>(
-        <Featured key={feature.id} {...feature} index={index}/>
-       ))}
-      </motion.div>
-    </section>
-  )
-}
-
-export default Business
+export default Business;
