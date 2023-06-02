@@ -32,7 +32,7 @@ export const navLinks = [
 	},
 	{
 		id: "product",
-		title: "Product",
+		title: "About US",
 	},
 	{
 		id: "clients",
@@ -75,7 +75,7 @@ export const feedback = [
 	{
 		id: "feedback-2",
 		content:
-			"Money makes your life easier. If you're lucky to have it, you're lucky.",
+			"The only thing that stands between you and your dream is the will to try and the belief that it is actually possible",
 		name: "Tsion.G ",
 		title: "Founder & Leader",
 		img: tsion,
