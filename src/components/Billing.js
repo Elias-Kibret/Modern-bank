@@ -1,4 +1,4 @@
-import { apple, bill, google } from "../assets";
+import { bill } from "../assets";
 import styles, { layout } from "../style";
 import { motion } from "framer-motion";
 const Billing = () => (
@@ -7,11 +7,10 @@ const Billing = () => (
 		whileInView={{ scale: 1, opacity: 1 }}
 		transition={{ duration: 0.1, delay: 0 }}
 		id="aboutus"
-		className={layout.sectionImgReverse + `mt-11`}
+		className={layout.sectionImgReverse + `flex  flex-col sm:flex-row`}
 	>
-		<div className={layout.sectionImg + `mt-10`}>
+		<div className={layout.sectionImg}>
 			<div>
-				1
 				<img
 					src={bill}
 					alt="billing"

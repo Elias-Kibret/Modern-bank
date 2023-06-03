@@ -26,8 +26,8 @@ const Featured = ({ icon, title, content, index }) => (
 );
 const Business = () => {
 	return (
-		<section id="features" className={layout.section}>
-			<motion.div
+		<section id="services" className={layout.section}>
+			<div
 				initial={{ x: -600, opacity: 0.5 }}
 				whileInView={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.5, delay: 0, stiffness: 120 }}
@@ -35,7 +35,7 @@ const Business = () => {
 			>
 				<div>
 					<h2 className={styles.heading2}>
-						Let us handle the tech <br className="sm:block hidden" />
+						Let us handle the tech <br className="sm:block " />
 						so you can focus on growing your business
 					</h2>
 					<p className={`${styles.paragraph} max-w-[470px] mt-5`}>
@@ -47,8 +47,8 @@ const Business = () => {
 					</p>
 					<Button styles="mt-10" />
 				</div>
-			</motion.div>
-			<motion.div
+			</div>
+			<div
 				initial={{ x: 400, opacity: 0.5 }}
 				whileInView={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.5, delay: 0.3, stiffness: 120 }}
@@ -57,7 +57,7 @@ const Business = () => {
 				{features.map((feature, index) => (
 					<Featured key={feature.id} {...feature} index={index} />
 				))}
-			</motion.div>
+			</div>
 		</section>
 	);
 };
