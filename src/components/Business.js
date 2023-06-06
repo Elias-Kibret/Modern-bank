@@ -2,7 +2,7 @@ import React from "react";
 import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
-import { motion } from "framer-motion";
+
 const Featured = ({ icon, title, content, index }) => (
 	<div
 		className={`flex flex-row p-6 rounded-[20px] ${

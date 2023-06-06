@@ -1,11 +1,8 @@
 import {
-	people01,
 	fana,
 	habesha,
 	ahadu,
 	qds,
-	people02,
-	people03,
 	facebook,
 	instagram,
 	linkedin,
